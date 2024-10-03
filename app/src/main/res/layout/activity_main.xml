@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16sp"
+    tools:context=".MainActivity">
+
+    <com.example.myapplication.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:background="#000"/>
+
+    <Button
+        android:id="@+id/predictButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predict"
+        android:layout_below="@id/drawingView"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_below="@id/drawingView"
+        android:layout_toRightOf="@id/predictButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prediction: "
+        android:layout_below="@id/predictButton"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
